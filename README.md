@@ -1,4 +1,4 @@
-                                                      # ReactNativeOne
+# ReactNativeOne
 
 My Resume as a React Native app.
 
