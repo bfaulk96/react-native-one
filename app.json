@@ -28,6 +28,9 @@
     },
     "android": {
       "package": "com.bfaulk96.reactnativeone"
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "ReactNative One",
+  "name": "ReactNativeOne"
 }
