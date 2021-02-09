@@ -12,6 +12,8 @@ import {
 } from 'react-native';
 import {Alert} from "react-native-web";
 
+const email = "placeholder@gmail.com"
+const phoneNumber = "(111)-111-1111"
 
 export default function HomeScreen() {
   return (
@@ -26,7 +28,7 @@ export default function HomeScreen() {
       </View>
 
       <View style={styles.aboutMeContainer}>
-        <Text style={[styles.aboutMeText, styles.aboutMeName]}>Brandon Faulkner</Text>
+        <Text style={[styles.aboutMeText, styles.aboutMeName]}>Brandon F</Text>
         <Text style={styles.aboutMeText}>
           Application Software Developer
         </Text>
@@ -74,11 +76,11 @@ export default function HomeScreen() {
 
       <View style={styles.contactContainer}>
         <View style={styles.contactBox}>
-          <TouchableOpacity onPress={() => handlePhoneClick("6183637354")}>
-            <Text style={styles.contactLink}>(618)-363-7354</Text>
+          <TouchableOpacity onPress={() => handlePhoneClick(phoneNumber.replace(/[()-]/g, ''))}>
+            <Text style={styles.contactLink}>{phoneNumber}</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => handleEmailClick("btfaulkner96@gmail.com")}>
-            <Text style={styles.contactLink}>btfaulkner96@gmail.com</Text>
+          <TouchableOpacity onPress={() => handleEmailClick(email)}>
+            <Text style={styles.contactLink}>{email}</Text>
           </TouchableOpacity>
         </View>
       </View>
